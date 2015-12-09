@@ -6,8 +6,8 @@ modules {
 }
 
 collection_group {
-    collect_every  = 10 # metrics span
-    time_threshold = 180 # metrics send span
+    collect_every  = 180 # metrics span
+    time_threshold = 60 # metrics send span
 
     metric {
         name_match = "disk_temp_(.+)"
