@@ -1,0 +1,15 @@
+modules {
+  module {
+    name = "disktemp" # my python module name
+    language = "python"
+  }
+}
+
+collection_group {
+    collect_every  = 10 # metrics span
+    time_threshold = 180 # metrics send span
+
+    metric {
+        name_match = "disk_temp_(.+)"
+    }
+}
